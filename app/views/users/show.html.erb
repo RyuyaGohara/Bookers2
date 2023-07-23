@@ -1,7 +1,20 @@
+
+
+
 <h1>Books</h1>
-<% @books.each do |book| %>
-<div>
-  <p>Title <%= book.title %></p>
-  <p>Opinion <%= book.body %></p>
-</div>
-<% end %>
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Opinion</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @books.each do |book| %>
+    <tr>
+      <td><%= book.title %></td>
+      <td><%= book.body %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
