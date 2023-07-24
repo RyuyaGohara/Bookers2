@@ -13,8 +13,8 @@ class BooksController < ApplicationController
 
   def show
     @book = Book.find(params[:id])
-    @book = Book.new
-
+    @newbook = Book.new
+    @user = @book.user
   end
 
   def edit
