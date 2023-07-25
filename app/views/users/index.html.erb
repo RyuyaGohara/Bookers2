@@ -11,8 +11,9 @@
   <tbody>
     <% @users.each do |user| %>
     <tr>
-      <td><%= image_tag 'no_image.jpg' %></td>
+      <td></td>
       <td><%= @users.name %></td>
+      <td><%= link_to "show", "/users/#{user.id}" %></td>
     </tr>
     <% end %>
   </tbody>
